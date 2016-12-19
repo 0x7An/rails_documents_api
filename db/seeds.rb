@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+10.times do |d|
+	FDocument.create!(
+		title: "Document #{d}",
+		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+		file_url: "https://docs.google.com/document/d/1Gd1HUBdWVffJ7i9xnmZXn79OZEHwivPCT9WJmfOMVV8/edit?usp=sharing",
+		image_url: 'https://s3.amazonaws.com/devcamp-static/images/freelance-img.jpg'
+	)
+end
