@@ -3,7 +3,7 @@ class FDocumentsController < ApplicationController
 
   # GET /f_documents
   def index
-    @f_documents = FDocument.all
+    @f_documents = FDocument.order('created_at DESC')
 
     render json: @f_documents
   end
